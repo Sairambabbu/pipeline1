@@ -1,3 +1,3 @@
-FROM tomcat:9
-EXPOSE 8080
-COPY target/*.war /usr/local/tomcat/webapps/pipeline1.war
+FROM tomcat:8
+# Take the war and copy to webapps of tomcat
+COPY target/*.war /usr/local/tomcat/webapps/*.war
