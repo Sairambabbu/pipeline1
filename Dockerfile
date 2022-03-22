@@ -1,4 +1,4 @@
-FROM tomcat:8
+FROM tomcat
 # Take the war and copy to webapps of tomcat
 #RUN yum install java -y
 COPY target/*.war /usr/local/tomcat/webapps/pipeline1.war
