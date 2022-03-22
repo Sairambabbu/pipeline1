@@ -1,6 +1,4 @@
 FROM tomcat
 # Take the war and copy to webapps of tomcat
-#RUN yum install java -y
-COPY *.war /usr/local/tomcat/webapps/*.war
-#EXPOSE 8080
+COPY target/*.war /usr/local/tomcat/webapps/dockeransible.war
 CMD ["catalina.sh", "run"]
